@@ -22,6 +22,39 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+## How to use
+Install mm-virtual-keyboard from npm by running `npm install mm-virtual-keyboard`.                          
+Add the module in your app.module.ts 
+
+```import { NgVirtualKeyboardModule } from './ng-virtual-keyboard.module';```
+
+```html
+    <div class="row form-group">
+      <div class="col-md-6">
+        <label for="portuguese" class="control-label">Portuguese Search</label>
+        <input 
+        type="text" 
+        name="portuguese" 
+        class="form-control" 
+        [(ngModel)]="portLang" 
+        [(appVirtualKeyboard)]="portLang" 
+        [isKeyboardDirectiveActive]="true"
+        [language]="'portuguese'"
+        [search]="true"
+        >
+    </div>
+````
+
+## Module Properties
+
+* appVirtualKeyboard : Parent's property which you want to bind. It is two way binded.
+* isKeyboardDirectiveActive : To disable or enable keyboard. Either use a Boolean to set condition or set it true.
+* kboardType : Set layout of keyboard using this. Two types are available :
+* alphaNumeric -- Default and no need to set explicitly
+* numeric -- Only numeric values.
+* language --- Toggle keyboard languages, currently French, English and Portuguese.
+* search --- has different keys if it's a search keyboard, boolean value.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

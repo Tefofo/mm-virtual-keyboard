@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
+import { LanguagesService } from './languages.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,24 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  constructor(private languageService: LanguagesService) {
+
+  }
+  @Output() changeLang = new EventEmitter();
+  isChange: boolean;
   title = 'app';
+  portLang = '';
+  engLang = '';
+  frenLang = '';
+  portStd = '';
+  engStd = '';
+  frenStd = '';
+  mobileNo = '';
+
+  onToggle() {
+    this.changeLang.emit(this.isChange);
+    this.languageService.getPortuguese();
+
+  }
 }

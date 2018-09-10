@@ -1,0 +1,166 @@
+/* button.keys-styles {
+  border: 1px solid gainsboro;
+  width: 100%;
+  white-space: nowrap;
+  background: rgb(255, 255, 255);
+  min-height: 50px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-radius: 2px;
+  font-family: Arial, Helvetica, sans-serif;
+} */
+button.keys-styles {
+  display: inline-block;
+    border: 1px solid #ccc;
+    width: 100%;
+    min-height: 50px;
+    border-radius: 4px;
+    text-overflow: ellipsis;
+    font-family: Arial, Helvetica, sans-serif;
+    /* font-size: 80%;  */
+    line-height: 1;
+    padding: 0.1em 0.5em;
+    margin: 0 0.2em;
+    box-shadow: 0 1px 0px rgba(0, 0, 0, 0.2), 0 0 0 2px #fff inset;
+    background-color: #f7f7f7;
+}
+.custom-button {
+  padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+}
+
+.keyboard-body {
+  border: 0px solid #a04f4f;
+  background-color: white;
+
+}
+
+.keyboardroot {
+  position: absolute;
+  width: 80%;
+  z-index: 999999999;
+}
+/* .keyboardroot {
+  position: relative;
+  width: 80%;
+  z-index: 999999999;
+} */
+
+/* .keys{
+    height: 28px;
+    width: 28px;
+} */
+button.keys-styles.selected {
+  background: rgba(245, 245, 245, 0.945);
+}
+
+/* .other-button{
+    height: 28px;
+} */
+
+.fix-number-last-row {
+  width: 34%
+}
+
+/* .number-table {
+  width: 100%;
+} */
+.number-table {
+  /* width: 100%;
+  position: relative;
+  animation-name: keyboard-insert-animation;
+  transform-origin: top left;
+  display: table;
+  margin-bottom: 10px; */
+  max-width: 300px;
+}
+@media (max-width: 768px) {
+  .btn-responsive {
+    padding:2px 4px;
+    font-size:80%;
+    line-height: 1;
+    border-radius:3px;
+  }
+}
+
+@keyframes keyboard-insert-animation {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* .set-positioning {
+  position: relative;
+  transform-origin: top left;
+  display: table;
+  background: white;
+  margin-bottom: 10px;
+  animation-name: keyboard-insert-animation;
+  animation-duration: 100ms;
+} */
+.set-positioning {
+  position: absolute;
+  transform-origin: top right;
+  display: table;
+  background: white;
+  margin-bottom: 10px;
+  animation-name: keyboard-insert-animation;
+  animation-duration: 100ms;
+}
+
+tr, table {
+  width: 120%;
+}
+
+td {
+  padding: 1px;
+}
+
+.alpha-numeric-flex {
+  display: flex;
+}
+.numeric-flex {
+  display: inline-table;
+}
+
+.alpha-width {
+  width: 100%;
+}
+
+.spacebar-width {
+  width: 60%;
+}
+.search-spacebar-width {
+  width: 16%;
+}
+.special-button {
+  width: 8%;
+}
+.clear-button {
+  width: 8%;
+}
+
+.table-numeric-row {
+  table-layout: fixed;
+}
+
+.numeric-decimal-bold {
+  font-weight: bold;
+}
+
+.only-numeric-max-width {
+  max-width: 150px;
+}
+
+
+button.keys-styles.backspace-icon {
+  /* background-image: url(../../../assets/baseline-backspace-24px.svg); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 18px;
+}

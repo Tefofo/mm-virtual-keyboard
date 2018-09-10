@@ -1,0 +1,22 @@
+{
+    "languages": [
+        {
+        "name": "French",
+        "prefix": "fr",
+        "keys": ["a", "z", "e", "r", "t", "y", "u", "i", "o", "p", "q", "s",
+            "d", "f", "g", "h", "j", "k", "l", "m", "w", "x", "c", "v", "b", "n"]
+    },
+    {
+        "name": "English",
+        "prefix": "en",
+        "keys": ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s",
+            "d", "f", "g", "h", "j", "k", "l", "z", "x", "c", "v", "b", "n", "m"]
+    },
+    {
+        "name": "Portuguese",
+        "prefix": "po",
+        "keys": ["q", "w", "e", "r", "t", "y", "u", "i", "o", "p", "a", "s",
+            "d", "f", "g", "h", "j", "k", "l", "ç", "z", "x", "c", "v", "b", "n", "m"]
+    }
+    ]
+}
